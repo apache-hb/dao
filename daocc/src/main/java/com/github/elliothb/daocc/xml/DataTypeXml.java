@@ -7,7 +7,7 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlEnum
 @XmlType(name = "type")
 public enum DataTypeXml {
-    @XmlEnumValue("text") TEXT,
+    @XmlEnumValue("varchar") VARCHAR,
     @XmlEnumValue("char") CHAR,
     @XmlEnumValue("float") FLOAT,
     @XmlEnumValue("double") DOUBLE,

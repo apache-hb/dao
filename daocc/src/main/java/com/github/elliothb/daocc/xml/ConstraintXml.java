@@ -15,5 +15,5 @@ public class ConstraintXml {
     public String references;
 
     @XmlAttribute(name = "unique")
-    public boolean unique;
+    public boolean unique = false;
 }

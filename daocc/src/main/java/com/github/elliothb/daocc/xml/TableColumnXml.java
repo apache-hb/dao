@@ -18,8 +18,8 @@ public class TableColumnXml {
     public boolean nullable = false;
 
     @XmlAttribute(name = "length")
-    public long length;
+    public long length = 0;
 
     @XmlAttribute(name = "autoIncrement")
-    public AutoIncrementXml autoIncrement;
+    public AutoIncrementXml autoIncrement = null;
 }

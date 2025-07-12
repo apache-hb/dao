@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema name="simple"
+<schema name="constraints"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../../target/generated-resources/schemagen/dao.xsd">
 
   <table name="region">
-    <column name="name" type="varchar" length="16" />
+    <column name="name" type="text" length="16">
+        <constraint name="ak_name" unique="true" />
+    </column>
   </table>
 </schema>
