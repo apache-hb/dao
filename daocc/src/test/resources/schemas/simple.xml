@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema name=""
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../target/generated-resources/schemagen/schema1.xsd">
+</schema>

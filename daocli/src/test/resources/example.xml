@@ -1,0 +1,28 @@
+<schema name="example">
+    <table name="region" syntheticPrimaryKey="ulong" autoIncrement="true">
+        <column name="region" type="text" length="16">
+            <constraint unique="true" />
+        </column>
+        <column name="account_id" type="char" length="12" />
+        <column name="role" type="text" length="64" />
+        <column name="log_group" type="text" length="64" />
+    </table>
+
+    <table name="event" syntheticPrimaryKey="ulong" autoIncrement="true">
+        <column name="pointer" type="text" length="255" />
+        <column name="region_id" type="ulong">
+            <constraint references="region.id" />
+        </column>
+        <column name="timestamp" type="datetime" />
+        <column name="customer_id" type="char" length="12" />
+        <column name="resource_id" type="text" length="64" />
+    </table>
+
+    <table name="attribute" syntheticPrimaryKey="ulong" autoIncrement="true">
+        <column name="event_id" type="ulong">
+            <constraint references="event.id" />
+        </column>
+        <column name="name" type="text" length="255" />
+        <column name="value" type="text" length="255" />
+    </table>
+</schema>
