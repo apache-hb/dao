@@ -4,8 +4,8 @@
         xsi:noNamespaceSchemaLocation="../../../../target/generated-resources/schemagen/dao.xsd">
 
   <table name="region">
-    <column name="name" type="text" length="16">
-        <constraint name="ak_name" unique="true" />
+    <column name="name" type="varchar" length="16">
+      <constraint name="ak_name" unique="true" />
     </column>
   </table>
 </schema>

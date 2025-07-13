@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema name="simple"
+        java.package="com.github.elliothb.daocc.test.dao"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../target/generated-resources/schemagen/dao.xsd">
+
+  <table name="region">
+    <column name="name" type="varchar" length="16" />
+    <column name="id" type="char" length="12" />
+    <column name="population" type="uint" />
+    <column name="debt" type="int" />
+    <column name="created" type="datetime" />
+    <column name="last_updated" type="tz_datetime" />
+    <column name="active" type="bool" />
+    <column name="rating" type="float" />
+    <column name="roughness" type="double" />
+    <column name="manifest" type="blob" />
+  </table>
+</schema>

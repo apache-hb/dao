@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema name="listSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../target/generated-resources/schemagen/dao.xsd">
+
+  <table name="customer" primaryKey="id">
+    <column name="id" type="char" length="12" />
+
+    <list name="resources" of="resource" by="id" />
+  </table>
+
+  <table name="resource" primaryKey="id">
+    <column name="id" type="ulong" />
+    <column name="name" type="varchar" length="64" />
+    <column name="type" type="varchar" length="32" />
+    <column name="created" type="datetime" />
+  </table>
+</schema>

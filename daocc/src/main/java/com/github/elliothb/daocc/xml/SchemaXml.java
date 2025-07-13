@@ -10,10 +10,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "schema")
 @XmlAccessorType(XmlAccessType.PUBLIC_MEMBER)
-public class SchemaXml {
-    @XmlAttribute(name = "name", required = true)
-    public String name;
-
+public class SchemaXml extends NamedObjectXml {
     @XmlAttribute(name = "java.package")
     public String javaPackage;
 

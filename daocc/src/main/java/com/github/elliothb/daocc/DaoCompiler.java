@@ -16,9 +16,9 @@ public class DaoCompiler {
     public static SchemaXml parse(Path path) throws JAXBException, DaoCompilerException {
         JAXBContext jaxbContext = JAXBContext.newInstance(SchemaXml.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-        SchemaXml schema = (SchemaXml) unmarshaller.unmarshal(path.toFile());
-        DaoValidation.validateSchema(schema);
-        return schema;
+        SchemaXml result = (SchemaXml) unmarshaller.unmarshal(path.toFile());
+        DaoValidation.validateSchema(result);
+        return result;
     }
 
     public static String getConstraintName(TableXml table, TableColumnXml column, ConstraintXml constraint) {

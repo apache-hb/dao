@@ -34,6 +34,10 @@
     <module>daocc</module>
     <module>daocli</module>
 
+    <module>runtime/sqlite</module>
+    <module>runtime/postgres</module>
+    <module>runtime/dynamodb</module>
+
     <module>tasks/ant</module>
     <module>tasks/maven</module>
     <module>tasks/gradle</module>

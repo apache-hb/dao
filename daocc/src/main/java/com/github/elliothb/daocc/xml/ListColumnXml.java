@@ -5,12 +5,12 @@ import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "tag")
+@XmlRootElement(name = "list")
 @XmlAccessorType(XmlAccessType.PUBLIC_MEMBER)
-public class TagXml {
-    @XmlAttribute(name = "name", required = true)
-    public String name;
+public class ListColumnXml extends NamedObjectXml {
+    @XmlAttribute(name = "of")
+    public String table;
 
-    @XmlAttribute(name = "value", required = true)
-    public String value;
+    @XmlAttribute(name = "by")
+    public String column;
 }

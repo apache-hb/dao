@@ -24,7 +24,7 @@ public class DaoValidationTest {
         TableColumnXml idColumn = new TableColumnXml();
         idColumn.name = "id";
         idColumn.type = DataTypeXml.ULONG;
-        idColumn.nullable = false;
+        idColumn.required = false;
         idColumn.autoIncrement = AutoIncrementXml.DEFAULT;
 
         validTable = new TableXml();
